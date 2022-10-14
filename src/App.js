@@ -1,13 +1,14 @@
 import React from 'react'
 import { Header } from './components/Header'
+import { ProjectProvider } from './context/ProjectContext'
 import { RoutesComponent } from './Routes'
 
 const App = () => {
   return (
-    <>
-    <Header />
-    <RoutesComponent />
-    </>
+    <ProjectProvider>
+      <Header />
+      <RoutesComponent />
+    </ProjectProvider>
   )
 }
 
