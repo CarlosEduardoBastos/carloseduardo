@@ -1,19 +1,16 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom"
+import {Route, Routes } from "react-router-dom"
+import Contact from "./pages/Contact";
 import { Home } from "./pages/Home";
 
-export const Routes = () => {
+export const RoutesComponent = () => {
   return (
-    <Switch>
-      <Route path="/" exact>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      {/* <Route path="/">
         <Home />
-      </Route>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-    </Switch>
+      </Route> */}
+      <Route path="/contact" element={<Contact />}/>
+    </Routes>
   )
 }
