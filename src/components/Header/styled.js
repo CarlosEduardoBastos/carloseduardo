@@ -10,7 +10,8 @@ export const ContainerHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    flex-wrap: wrap;
+    padding: 20px 20px;
   }
 `;
 

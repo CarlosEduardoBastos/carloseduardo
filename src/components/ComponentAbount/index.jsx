@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container, Content, ContentImg } from './styled';
+import { Container, Content, ContentLink } from './styled';
 import Lottie from "react-lottie";
-import animationData from "../../assets/lotties/36121-developer-at-work.json"
+import animationData from "../../assets/lotties/71217-programador-web.json"
+import { Link } from 'react-router-dom';
 
 export const ComponentAbount = () => {
   const defaultOptions = {
@@ -21,22 +22,26 @@ export const ComponentAbount = () => {
             <p>desenvolvedor front-end</p>
           </div>
           <p>
-          tenho 18 anos, comecei estudar
-          programação aos meus 11 anos com a linguagem de programação
-          python, e logo em seguida, passei para o desenvolvimento web com
-          html, css e javascript, onde tenho mais de 5 anos estudando. No
-          momento estou aprendendo react.js, react native, next.js, node.js, mysql,
-          no qual estou me saindo muito bem.
+            tenho 18 anos, comecei estudar
+            programação aos meus 11 anos com a linguagem de programação
+            python, e logo em seguida, passei para o desenvolvimento web com
+            html, css e javascript, onde tenho mais de 5 anos estudando. No
+            momento estou aprendendo react.js, react native, next.js, node.js, mysql,
+            no qual estou me saindo muito bem.
           </p>
+
+          <ContentLink>
+            <Link to="/project">Projetos</Link>
+          </ContentLink>
         </Content>
-        <ContentImg>
-        <Lottie
-            options={defaultOptions}
-            height={300}
-            width={450}
-            title="Emad Moradian"
-          />
-        </ContentImg>
+        <div className='img'>
+          <Lottie
+              options={defaultOptions}
+              height={300}
+              max-width={450}
+              title="Manuel Solis"
+            />
+        </div>
       </section>
     </Container>
   )
