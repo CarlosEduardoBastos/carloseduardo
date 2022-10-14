@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   background-color: #282A36;
-  height: 100vh;
+  height: 100%;
   padding: 90px 0px;
 
-  section{
+  section {
     max-width: 960px;
     margin: 0 auto;
-    font-size: 1.3rem;
-    color: #fff;
-    li{
-      margin: 10px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
   }
 `

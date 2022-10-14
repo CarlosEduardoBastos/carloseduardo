@@ -22,10 +22,10 @@ export const ComponentAbount = () => {
             <p>desenvolvedor front-end</p>
           </div>
           <p>
-            tenho 18 anos, comecei estudar
+            Tenho 18 anos, comecei estudar
             programação aos meus 11 anos com a linguagem de programação
             python, e logo em seguida, passei para o desenvolvimento web com
-            html, css e javascript, onde tenho mais de 5 anos estudando. No
+            html, css e javascript. No
             momento estou aprendendo react.js, react native, next.js, node.js, mysql,
             no qual estou me saindo muito bem.
           </p>

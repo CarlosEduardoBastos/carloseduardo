@@ -17,7 +17,7 @@ const Contact = () => {
               Github: <a href='https://github.com/CarlosEduardoBastos' target="_blank" rel="noreferrer">https://github.com/CarlosEduardoBastos</a>
             </li>
             <li>
-              <p>Numero: 74 999016923</p>
+              <p>Número: 74 999016923</p>
             </li>
           </ul>
         </nav>
