@@ -34,6 +34,9 @@ export const Nav = styled.div`
       a{
         font-size: 1.2rem;
       }
+      .active{
+        color: #8C80CE;
+      }
     }
   }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { ContainerHeader, ContainerLogo, Nav } from './styled'
 
 export const Header = () => {
@@ -12,13 +12,13 @@ export const Header = () => {
         <Nav>
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <NavLink to="/" end style={({ isActive }) => ({ color: isActive ? "8C80CE" : undefined})}>Home</NavLink>
             </li>
             <li>
-              <Link to="/project">Projetos</Link>
+              <NavLink to="/project" end style={({ isActive }) => ({ color: isActive ? "8C80CE" : undefined })}>Projetos</NavLink>
             </li>
             <li>
-              <Link to="/contact">Contatos</Link>
+              <NavLink to="/contact" end style={({ isActive }) => ({ color: isActive ? "8C80CE" : undefined})}>Contatos</NavLink>
             </li>
           </ul>
         </Nav>
