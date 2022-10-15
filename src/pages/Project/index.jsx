@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
 import { ComponentProject } from '../../components/ComponetProject'
+import { Loading } from '../../components/Loading'
 import { ProjectContext } from '../../context/ProjectContext'
 import { Container } from './styled'
 
 export const Project = () => {
   const {loading,project} = useContext(ProjectContext);
-  if(loading) return <p>Carregando</p>
+  if(loading) return <Loading />
   return (
     <Container>
       <section>
