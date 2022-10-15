@@ -4,7 +4,7 @@ export const ProjectContext = createContext()
 
 export const  ProjectProvider = ({children}) => {
   const [project,setProject] = useState(null);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   useEffect(()=>{
     const apiFetch = async () => {
