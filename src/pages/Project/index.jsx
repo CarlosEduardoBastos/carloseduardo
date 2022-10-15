@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ComponentProject } from '../../components/ComponetProject'
-import Loading from '../../components/Loading'
+import { Loading } from '../../components/Loading'
 import { ProjectContext } from '../../context/ProjectContext'
 import { Container } from './styled'
 

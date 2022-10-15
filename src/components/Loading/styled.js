@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerLoading = styled.div`
+export const Container = styled.div`
   margin: 20px auto;
   animation: is-rotating 1s infinite;
   border: 6px solid #e5e5e5;

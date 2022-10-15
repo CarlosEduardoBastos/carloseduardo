@@ -1,7 +1,5 @@
-import { ContainerLoading } from "./styled";
+import { Container } from "./styled";
 
-const Loading = () => {
-  return <ContainerLoading></ContainerLoading>
+export const Loading = () => {
+  return <Container></Container>
 };
-
-export default Loading;
