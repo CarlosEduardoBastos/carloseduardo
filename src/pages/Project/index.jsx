@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react'
-import { ComponentProject } from '../../components/ComponetProject'
+import { ButtonProject } from '../../components/ButtonProject'
 import { Loading } from '../../components/Loading'
 import { loadProjects } from '../../context/ProjectsContext/actions'
 import { ProjectsContext } from '../../context/ProjectsContext/context'
@@ -19,13 +19,13 @@ export const Project = () => {
     return () => (isMounted.current = false);
   },[projectsDispatch])
 
-  
+
   if(loading) return <Loading />
   return (
     <Container>
       <section>
         {projects.map(({name,html_url})=>(
-          <ComponentProject 
+          <ButtonProject 
             name={name}
             href={html_url} 
             key={name}
