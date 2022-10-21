@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './components/Header'
-import { ProjectProvider } from './context/ProjectContext'
 import { RoutesComponent } from './Routes'
+import { ProjectProvider } from './context/ProjectsContext'
 
 const App = () => {
   return (

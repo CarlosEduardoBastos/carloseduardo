@@ -1,17 +1,31 @@
-import React, { useContext } from 'react'
-import { ComponentProject } from '../../components/ComponetProject'
+import React, { useContext, useEffect, useRef } from 'react'
+import { ButtonProject } from '../../components/ButtonProject'
 import { Loading } from '../../components/Loading'
-import { ProjectContext } from '../../context/ProjectContext'
+import { loadProjects } from '../../context/ProjectsContext/actions'
+import { ProjectsContext } from '../../context/ProjectsContext/context'
 import { Container } from './styled'
 
 export const Project = () => {
-  const {loading,project} = useContext(ProjectContext);
+  const isMounted = useRef(true);
+  const {projectsState: {projects,loading}, projectsDispatch} = useContext(ProjectsContext);
+
+  useEffect(()=>{
+    loadProjects(projectsDispatch).then((dispatch) => {
+      if (isMounted.current) {
+        dispatch();
+      }
+    });
+
+    return () => (isMounted.current = false);
+  },[projectsDispatch])
+
+
   if(loading) return <Loading />
   return (
     <Container>
       <section>
-        {project && project.map(({name,html_url})=>(
-          <ComponentProject 
+        {projects.map(({name,html_url})=>(
+          <ButtonProject 
             name={name}
             href={html_url} 
             key={name}

@@ -8,4 +8,10 @@ export const Container = styled.div`
   border-top-color: #51d4db;
   height: 50px;
   width: 50px;
+
+  @keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
 `
